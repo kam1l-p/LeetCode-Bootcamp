@@ -60,6 +60,7 @@ char decryptChar(char ch, int step) {
 
 // decrypts a string that is passed in
 void decryptString(string& line, int step) {
+    // goes through the string by character and decrypts in place
     for (size_t charInd = 0; charInd < line.size(); ++charInd) {
         line[charInd] = decryptChar(line[charInd], step);
     }
